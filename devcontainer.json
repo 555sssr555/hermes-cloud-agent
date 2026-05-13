@@ -1,0 +1,22 @@
+{
+  "name": "Hermes Agent + Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-python.python"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "github.copilot.advanced": { "debug.testOverrideProxyUrl": false }
+      }
+    }
+  },
+  "postCreateCommand": "pip install --user hermes-agent && echo '✅ Hermes installed'",
+  "remoteUser": "vscode"
+}
