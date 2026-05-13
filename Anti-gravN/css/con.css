@@ -1,0 +1,90 @@
+/* Загальні налаштування */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f8fb;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(to right top, #e0f7ff, #b2e0f9, #84c9f2, #57b1ec, #2a99e6);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  section {
+    background: #ffffff;
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2a99e6;
+  }
+  
+  section p, section li {
+    font-size: 1.1rem;
+  }
+  
+  section ul {
+    padding-left: 20px;
+  }
+  
+  a {
+    color: #2a99e6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+  }
+  
+  /* Адаптив */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.6rem;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

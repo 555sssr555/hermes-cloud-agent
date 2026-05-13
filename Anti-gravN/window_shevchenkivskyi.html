@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мийка вікон Київ Шевченківськом районі - Носівка | Multi-Cleaning</title>
+    <link rel="preload" href="/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/windows_w.css">
+    <style>
+      body {
+        margin: 0;
+        color: rgba(10, 10, 10, 0.993);
+        font-family: 'Segoe UI', sans-serif;
+        overflow-x: hidden;
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('img/window-cleaning.webp') no-repeat center center;
+        background-size: 1400px 600px;
+        opacity: 1;
+        animation: none;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 0.3;
+        }
+      }
+
+      canvas {
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      h1 {
+        color: rgba(255, 217, 0, 0.74);
+        margin-bottom: 0.2rem;
+        font-display: swap;
+      }
+
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.678);
+        /* щоб текст краще читався */
+        border-radius: 1rem;
+      }
+
+      a {
+        color: gold;
+        text-decoration: none;
+      }
+    </style>
+    <link rel="preload" as="image" href="img/window.webp" type="image/webp">
+
+    <meta name="description" content="Мийка вікон у Києві (Шевченківський район) від 120 грн. Оперативно, без розлучень, з гарантією якості. Знижка 10% на перше замовлення. Телефонуйте!"> 
+<meta name="google-adsense-account" content="ca-pub-5499862202240374"> 
+
+<meta name="keywords" content="мийка вікон Шевченківський район Київ, мийка вікон Носівка, миття скла, професійне прибирання, клінінг, миття фасадів, вікна Київ"> 
+
+<meta name="robots" content="index, follow"> 
+<link rel="canonical" href="https://multicleaning.alwaysdata.net/window_shevchenkivskyi.html"> 
+<!-- Open Graph (OG) --> 
+<meta property="og:title" content="Мийка вікон у Шевченківському районі Києва | Multi-Cleaning"> 
+<meta property="og:description" content="Професійне миття вікон з обох боків, рам, підвіконь. Надійно, швидко та за фіксованими цінами. Замовляйте клінінг у вашому районі."> 
+<meta property="og:type" content="website">
+    <meta property="og:url" content="https://multicleaning.alwaysdata.net/window_shevchenkivskyi.html">
+    <meta property="og:image" content="https://multicleaning.alwaysdata.net/img/clin.png">
+    <meta property="og:site_name" content="Multi-Cleaning">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://multicleaning.alwaysdata.net/img/clin.png">
+
+    <link rel="icon" href="img/clin.png" type="image/x-icon">
+    <!--link rel="stylesheet" href="css/styles.css"-->
+
+    <!-- Schema.org разметка цен и страницы -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Multi-Cleaning",
+        "url": "https://multicleaning.alwaysdata.net/",
+        "logo": "https://multicleaning.alwaysdata.net/img/clin.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+380986381008",
+          "contactType": "Customer Service",
+          "areaServed": "UA",
+          "availableLanguage": "ru"
+        },
+        "sameAs": [
+          "https://t.me/yourcompany",
+          "viber://chat?number=380986381008"
+        ]
+      },
+      { 
+        "@type": "WebPage", 
+        "name": "Мийка вікон у Шевченківському районі - Носівка", 
+        "url": "https://multicleaning.alwaysdata.net/uk/window_shevchenkivskyi.html", 
+        "inLanguage": "ru", 
+        "about": { 
+        "@type": "Service", 
+        "name": "Мийка вікон у Києві та Носівці", 
+        "serviceType": "Мийка вікон", 
+        "provider": { 
+        "@type": "Organization", 
+        "name": "Multi-Cleaning" 
+        }, 
+        "areaServed": { 
+        "@type": "Place", 
+        "name": "Шевченківський район, Київ, Носівка" 
+        }, 
+        "availableChannel": { 
+        "@type": "ServiceChannel", 
+        "serviceUrl": "https://multicleaning.alwaysdata.net/index.html#order", 
+        "servicePhone": "+380986381008" 
+        } 
+        } 
+        }, 
+        { 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [ 
+        { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "name": "Головна", 
+        "item": "https://multicleaning.alwaysdata.net/" 
+        }, 
+        { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "name": "Мийка вікон", 
+        "item": "https://multicleaning.alwaysdata.net/uk/window_shevchenkivskyi.html" 
+        } 
+        ] 
+        }, 
+        { 
+        "@type": "OfferCatalog", 
+        "name": "Ціни на миття вікон", 
+        "itemListElement": [ 
+        { 
+        "@type": "Offer", 
+        "price": "120.00", 
+        "priceCurrency": "UAH", 
+        "itemOffered": { 
+        "@type": "Service", 
+        "name": "Мийка стандартного двостулкового вікна", 
+        "description": "Мийка скла, рами, підвіконня з обох боків", 
+        "areaServed": { 
+        "@type": "Place", 
+        "name": "Київ, Носівка" 
+        } 
+        } 
+        }, 
+        { 
+        "@type": "Offer", 
+        "price": "120.00", 
+        "priceCurrency": "UAH", 
+        "itemOffered": { 
+        "@type": "Service", 
+        "name": "Мийка панорамного вікна", 
+        "description": "Повне очищення панорамного скла та конструкцій" 
+        } 
+        }, 
+        { 
+        "@type": "Offer", 
+        "price": "120.00", 
+        "priceCurrency": "UAH", 
+        "itemOffered": { 
+        "@type": "Service", 
+        "name": "Мийка вікон після ремонту", 
+        "description": "Очищення скла, рам, підвіконь після будівельних робіт" 
+        } 
+        }, 
+        { 
+        "@type": "Offer", 
+        "price": "80.00", 
+        "priceCurrency": "UAH", 
+        "itemOffered": { 
+        "@type": "Service", 
+        "name": "Мийка вікон офісу", 
+        "description": "Професійне миття офісних скляних конструкцій" 
+        } 
+        } 
+        ] 
+        }, 
+        { 
+        "@type": "FAQPage", 
+        "mainEntity": [ 
+        { 
+        "@type": "Question", 
+        "name": "Скільки коштує миття вікон?", 
+        "acceptedAnswer": { 
+        "@type": "Answer", 
+        "text": "Ціни починаються від 100 грн за вікно. Точна вартість залежить від розміру, забрудненості та поверху." 
+        } 
+        }, 
+        { 
+        "@type": "Question", 
+        "name": "Чи працюєте ви в день замовлення?", 
+        "acceptedAnswer": { 
+        "@type": "Answer", 
+        "text": "Так, ми приймаємо термінові замовлення, якщо є вільні майстри." 
+        } 
+        } 
+        ] 
+        }, 
+        { 
+        "@type": "AggregateRating", 
+        "itemReviewed": { 
+        "@type": "Organization", 
+        "name": "Multi-Cleaning" 
+        }, 
+        "ratingValue": "4.9", 
+        "reviewCount": "137" 
+        } 
+        ] 
+        } 
+  </script>
+  
+
+
+
+
+
+
+    <!-- Google Analytics 4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-484631578"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      // Настройка Google Analytics 4
+      gtag('config', 'G-484631578');
+    </script>
+
+  </head>
+
+  <body>
+    <header class="main-header" style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+      
+      <!-- Актуальные цены -->
+      <div class="price-button-container">
+        <a href="#pricing-window" class="price-button">Подивитися актуальні ціни</a>
+      </div>
+
+      <!-- Логотип -->
+      <div class="left-bar">
+        <a href="https://multicleaning.alwaysdata.net/index.html" class="logo-frame">
+          <img src="img/clin.png" alt="Multi-Cleaning" width="200" height="150" loading="lazy" />
+        </a>
+      </div>
+    
+      <!-- Кнопка быстрого перехода -->
+      <div class="vertical-buttons"> 
+        <a href="#seasonal-cleaning" class="btn-quick">🔹 Сезонне миття вікон</a> 
+        <a href="#general-cleaning" class="btn-quick">🔹 Генеральне миття вікон</a> 
+        <a href="#post-construction-cleaning" class="btn-quick">🔹 Після-будівельне миття вікон</a> 
+        </div> 
+        </header> 
+        
+        <h1 style="text-align:center; font-family:'Cinzel', serif; color:var(--accent); margin-top:20px;"> 
+        Мийка вікон Київ
+    </h1>    
+
+    <div class="card" style="margin-top:16px; text-align:center;">
+      <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+        <img src="img/windows1.webp" alt="Професійне миття вікон у квартирах та офісах Києва" width="240" height="300" loading="lazy" style="border-radius:10px;">
+      </div>
+    
+      <h3 id="seasonal-cleaning" style="text-align:center;color:var(--accent);"> 
+        Сезонне миття вікон у Києві — етапи, результат та переваги 
+        </h3> 
+        
+        <p style="text-align:justify;margin-top:10px;"> 
+        У великих містах, таких як <strong>Київ</strong>, вікна щодня стикаються з пилом доріг, слідами вихлопних газів, дощами з частинками сажі та будівельним пилом. 
+        Згодом скло втрачає прозорість, стає каламутним, а приміщення візуально темнішим і менш затишним. 
+        Але саме через вікна в будинок приходить світло, тепло і відчуття простору. 
+        </p> 
+        
+        <p style="text-align:justify;margin-top:10px;"> 
+        Уявіть: наші фахівці приходять із сучасним обладнанням, включають парогенератор, 
+        і кожен міліметр скла починає буквально дихати чистотою. 
+        Ми знімаємо шар за шаром міський наліт, акуратно очищаємо рами, ущільнювачі та укоси, 
+        а після - поліруємо поверхню до дзеркального блиску. 
+        Ні розлучень, ні слідів — лише кристальна прозорість та відчуття свіжого ранку, 
+        ніби вікно - це портал в інший, чистіший світ. 
+        </p> 
+        
+        <p style="text-align:justify;margin-top:10px;"> 
+        <strong>Етапи миття вікон у Києві:</strong><br> 
+        — Попередня оцінка стану скла та рам.<br> 
+        — Нанесення професійного розчину, що очищає (безпечного для людей і тварин).<br> 
+        — Механічна та парова очищення важкодоступних зон.<br> 
+        - Полірування мікрофіброю з антистатичним ефектом.<br> 
+        - Перевірка під різними кутами світла для ідеального результату. 
+        </p> 
+        
+        <p style="text-align:justify;margin-top:10px;"> 
+        Такий підхід не тільки повертає вікнам їх прозорість, але й продовжує термін служби рам і ущільнювачів. 
+        А ваш будинок чи офіс наповнюється більше світла, затишку і навіть натхнення — адже погодьтеся, 
+        чисте вікно немовби відкриває нові горизонти. 
+        </p> 
+        
+        <p style="text-align:center;margin-top:14px;font-weight:600;color:var(--gold);"> 
+        <h2>Замовте сезонне миття вікон у Києві</h2> прямо зараз. 
+        і відчуйте, як ваш інтер'єр наповнюється свіжістю та гармонією!<br> 
+        <a href="viber://chat?number=+380986381008" class="btn">Написати до Viber</a> 
+        <a href="tel:+380986381008" class="btn"> Зателефонувати зараз 0986381008</a> 
+        </p> 
+        
+        <div class="price-button-container"> 
+        <a href="#pricing-window" class="price-button">Подивитися актуальні ціни</a> 
+        </div> 
+    </div>
+
+    <div class="card" style="margin-top:16px"> 
+      <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;"> 
+      <img src="img/window-clean.webp" alt="Мийка вікон у Києві після ремонту" width="240" height="300" loading="lazy" style="border-radius:10px;"> 
+      </div> 
+      <h3 id="general-cleaning" style="text-align:center;color:var(--accent);">Генеральне миття вікон у Києві — ідеальна чистота та свіжість вашого простору</h3> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      В умовах мегаполісу вікна піддаються впливу багатьох забруднювачів: пил, вихлопні гази, сажа, дощові краплі з домішками хімічних речовин. З часом скла втрачають свою прозорість, а приміщення стають темнішими і менш затишними. <strong>Генеральне миття вікон</strong> — це комплексна послуга, спрямована на відновлення ідеального стану віконних конструкцій та покращення мікроклімату у вашому будинку чи офісі. 
+      </p> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      Фахівці використовують лише <strong>професійні та безпечні засоби</strong>, які ефективно видаляють забруднення, не ушкоджуючи поверхні. Ми застосовуємо сучасне обладнання та технології, щоб забезпечити бездоганний результат. 
+      </p> 
+      <h4 style="margin-top:20px;">Етапи: <h2>Генеральне миття вікон</h2>:</h4> 
+      <ul> 
+      <li><strong>Оцінка стану вікон:</strong> огляд скла, рам, укосів та підвіконь для визначення ступеня забруднення та вибору оптимальних засобів та методів очищення.</li> 
+      <li><strong>Видалення пилу та бруду:</strong> за допомогою пилососів та щіток видаляється пил та бруд з рам, укосів та підвіконь.</li> 
+      <li><strong>Очищення скла:</strong> нанесення миючого засобу на скло, видалення забруднень за допомогою скребків та м'яких серветок.</li> 
+      <li><strong>Полірування скла:</strong> використання спеціальних засобів для полірування скла, що надають їм блиск і прозорість.</li> 
+      <li><strong>Очищення рам та укосів:</strong> ретельне очищення рам, укосів та підвіконь від забруднень та пилу.</li> 
+      <li><strong>Перевірка якості:</strong> огляд вікон після збирання для забезпечення високої якості виконаної роботи.</li> 
+      </ul> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      <strong>Переваги генерального миття вікон:</strong> 
+      </p> 
+      <ul> 
+      <li><strong>Відновлення прозорості:</strong> видалення забруднень повертає склам їхню початкову прозорість, покращуючи вигляд з вікна.</li> 
+      <li><strong>Поліпшення мікроклімату:</strong> чисті вікна сприяють кращому проникненню світла, покращуючи освітленість приміщень.</li> 
+      <li><strong>Продовження терміну служби вікон:</strong> регулярне та якісне прибирання запобігає пошкодженню та зносу віконних конструкцій.</li> 
+      <li><strong>Естетичне покращення:</strong> чисті вікна надають приміщенню доглянутого та привабливого вигляду.</li> 
+      <li><strong>Професійний підхід:</strong> наші фахівці мають необхідні навички та досвід для виконання роботи на високому рівні.</li> 
+      </ul> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      <strong>Чому обирають нас:</strong> ми гарантуємо високу якість виконання робіт, використання безпечних та ефективних засобів, а також індивідуальний підхід до кожного клієнта. Наша мета – забезпечити вам ідеальну чистоту вікон та комфорт у вашому будинку чи офісі. 
+      </p> 
+      <p style="text-align:center;margin-top:14px;font-weight:600;color:var(--gold);"> 
+      Замовте генеральне миття вікон прямо зараз — і відчуйте, як ваш інтер'єр наповнюється свіжістю та гармонією!<br> 
+      <a href="viber://chat?number=+380986381008" class="btn">Написати до Viber</a> 
+      <a href="tel:+380986381008" class="btn"> Зателефонувати зараз 0986381008</a> 
+      </p> 
+    </div>
+
+    <div class="card" style="margin-top:16px"> 
+      <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;"> 
+      <img src="img/post-construction-cleaning.webp" alt="Чисті вікна після клінінгу в Києві" width="240" height="300" loading="lazy" style="border-radius:10px;"> 
+      </div> 
+      <h3 id="post-construction-cleaning" style="text-align:center;color:var(--accent);">Після-будівельне миття вікон у Києві — ідеальна чистота та свіжість вашого простору</h3> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      Після завершення будівельних або ремонтних робіт вікна часто покриті шарами пилу, фарби, штукатурки, клею та інших забруднень. <strong>Після-будівельне миття вікон</strong> — це спеціалізована послуга, спрямована на відновлення прозорості скла та повернення приміщенню свіжості та затишку. 
+      </p> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      Наші фахівці використовують лише <strong>професійні та безпечні засоби</strong>, які ефективно видаляють будівельні забруднення, не ушкоджуючи поверхні. Ми застосовуємо сучасне обладнання та технології, щоб забезпечити бездоганний результат. 
+      </p> 
+      <h4 style="margin-top:20px;">Етапи після-будівельного миття вікон:</h4> 
+      <ul> 
+      <li><strong>Оцінка стану вікон:</strong> огляд скла, рам, укосів та підвіконь для визначення ступеня забруднення та вибору оптимальних засобів та методів очищення.</li> 
+      <li><strong>Видалення пилу та бруду:</strong> за допомогою пилососів та щіток видаляється пил та бруд з рам, укосів та підвіконь.</li> 
+      <li><strong>Видалення будівельних забруднень:</strong> використання спеціалізованих засобів для видалення слідів фарби, клею, штукатурки та інших будівельних забруднень.</li> 
+      <li><strong>Очищення скла:</strong> нанесення миючого засобу на скло, видалення забруднень за допомогою скребків та м'яких серветок.</li> 
+      <li><strong>Полірування скла:</strong> використання спеціальних засобів для полірування скла, що надають їм блиск і прозорість.</li> 
+      <li><strong>Очищення рам та укосів:</strong> ретельне очищення рам, укосів та підвіконь від забруднень та пилу.</li> 
+      <li><strong>Перевірка якості:</strong> огляд вікон після збирання для забезпечення високої якості виконаної роботи.</li> 
+      </ul> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      <strong>Переваги після-будівельного миття вікон:</strong> 
+      </p> 
+      <ul> 
+      <li><strong>Відновлення прозорості:</strong> видалення будівельних забруднень повертає склам їхню початкову прозорість, покращуючи вигляд з вікна.</li> 
+      <li><strong>Поліпшення мікроклімату:</strong> чисті вікна сприяють кращому проникненню світла, покращуючи освітленість приміщень.</li> 
+      <li><strong>Продовження терміну служби вікон:</strong> регулярне та якісне прибирання запобігає пошкодженню та зносу віконних конструкцій.</li> 
+      <li><strong>Естетичне покращення:</strong> чисті вікна надають приміщенню доглянутого та привабливого вигляду.</li> 
+      <li><strong>Професійний підхід:</strong> наші фахівці мають необхідні навички та досвід для виконання роботи на високому рівні.</li> 
+      </ul> 
+      <p style="text-align:justify;margin-top:10px;"> 
+      <strong>Чому обирають нас:</strong> ми гарантуємо високу якість виконання робіт, використання безпечних та ефективних засобів, а також індивідуальний підхід до кожного клієнта. Наша мета – забезпечити вам ідеальну чистоту вікон та комфорт у вашому будинку чи офісі. 
+      </p> 
+      <p style="text-align:center;margin-top:14px;font-weight:600;color:var(--gold);"> 
+      Замовте після-будівельне миття вікон у Києві прямо зараз — і відчуйте, як ваш інтер'єр наповнюється свіжістю та гармонією!<br> 
+      <a href="viber://chat?number=+380986381008" class="btn">Написати до Viber</a> 
+      <a href="tel:+380986381008" class="btn"> Зателефонувати зараз 0986381008</a> 
+      </p> 
+    </div>
+
+
+    <div class="card" style="margin-top:16px; text-align:center;"> 
+
+      <h4 style="color:gold; margin-top:12px;">Чому жителі Києва довіряють Multi-Cleaning</h4> 
+      
+      <ul style="text-align:left; display:inline-block; max-width:600px;"> 
+      <li><strong>Бережне поводження</strong> — наші клінери ретельно обробляють кожне скло та раму, не залишаючи розлучень і подряпин, навіть на тонованих та панорамних вікнах.</li> 
+      <li><strong>Енергія чистоти</strong> — після нашого прибирання приміщення буквально наповнюється свіжістю, а ви відчуваєте легкість та натхнення для нових справ.</li> 
+      <li><strong>Екологічна безпека</strong> — використовуємо сертифіковані, нешкідливі для дітей та тварин засоби, які не залишають запаху та не ушкоджують поверхні.</li> 
+      <li><strong>Швидкість і точність</strong> — професійне миття вікон та прибирання за лічені години, без шуму, зайвого безладдя та стресів.</li> 
+      <li><strong>Ціна нижче ринкової</strong> — професійні послуги від <span style="color:gold;font-weight:bold;">всього від 55 грн/м²</span> для квартир та приватних будинків по Києву та області.</li> 
+      <li><strong>Молода компанія, що динамічно розвивається</strong> — Multi-Cleaning стрімко набирає клієнтів, розширює послуги та охоплює нові райони, включаючи місто Носівка.</li> 
+      </ul> 
+      
+      <p style="text-align:justify; margin-top:12px;"> 
+      <strong>Кожне вікно, кожна поверхня — це турбота про ваш комфорт та затишок.</strong> 
+      Наша команда працює так, щоб Ви відчували легкість, порядок і гармонію вже в перші години після прибирання. 
+      Multi-Cleaning – це не просто сервіс, це досвід чистоти, який надихає та радує щодня. 
+      </p> 
+      
+      <p style="margin-top:14px; font-weight:bold; font-size:16px;"> 
+      📞 <a href="tel:+380986381008" style="color:var(--accent);text-decoration:none;">098 638 10 08</a> | 
+      <a href="tel:+380986381008" style="color:var(--accent);text-decoration:none;">098 638 10 08</a> <br> 
+      💬 <a href="viber://chat?number=%2B380986381008" style="color:var(--accent); text-decoration:none;">Звязатися через Viber</a> і отримати консультацію та швидкий розрахунок ціни прямо зараз! 
+      </p> 
+      
+      <p style="margin-top:12px; text-align:center; font-size:17px; font-weight:600; color:var(--gold);"> 
+      <strong>Замовте прибирання прямо зараз — і Ваші вікна засяють чистотою, а будинок наповниться свіжістю та гармонією!</strong> 
+      </p> 
+      
+    </div>
+    
+    
+    
+
+
+    <div class="card" style="margin-top:16px"> 
+      <h3 style="text-align:center;color:var(--accent)">Гарантії та умови</h3> 
+      <ul> 
+      <li>Працюємо акуратно — без пошкодження скла та рам</li> 
+      <li>Використовуємо сертифіковані засоби</li> 
+      <li>Приїжджаємо в обумовлений час</li> 
+      <li>Гарантія якості на виконані роботи</li> 
+      </ul> 
+      </div> 
+      
+      
+      <!-- FAQ для користувачів та Google (візуально та через JSON-LD вище) --> 
+      <div class="card faq" style="margin-top:16px"> 
+      <h3 style="text-align:center;color:var(--accent)">Питання та відповіді</h3> 
+      <details> 
+      <summary>Скільки коштує миття вікон у Шевченківському районі?</summary> 
+      <p>Ціна залежить від типу вікна, поверховості та ступеня забруднення; наші тарифи актуальні і нижчі за ринкові — для 
+      точного розрахунку використовуйте калькулятор або дзвоніть.</p> 
+      </details> 
+      <details> 
+      <summary>Чи можна замовити миття вікон у день звернення?</summary> 
+      <p>Так, в більшості випадків ми виконуємо замовлення в день звернення або на наступний день - уточнюйте доступність 
+      бригад у менеджера.</p> 
+      </details> 
+      <details> 
+      <summary>Що робити, якщо на вікнах будівельні забруднення?</summary> 
+      <p>Ми застосовуємо парове очищення та спеціальні склади для безпечного видалення будівельного пилу та слідів фарби 
+      без пошкодження скла.</p> 
+      </details> 
+      </div> 
+      
+      
+      <div style="text-align:center;margin-top:18px"> 
+      <p style="font-weight:700;color:var(--gold)">Замовте миття вікон — ціни актуальні і нижчі від ринкових</p> 
+      <p class="phone" style="font-weight:700"><a href="tel:+380986381008">098 638 10 08</a> · <a 
+      href="viber://chat?number=%2B380986381008">Viber 098 638 10 08</a></p> 
+      <p style="margin-top:12px"><a class="btn" href="#order">Замовити мийку вікон</a></p> 
+      </div> 
+      
+      <section id="pricing-window" class="card" style="margin-top:24px;"> 
+      <h2 class="highlight-title">🔍 Актуальні ціни на миття вікон у Києві</h2> 
+      <p style="text-align:justify; margin-bottom:16px;"> 
+      Залежно від площі, ступеня забруднення та складності (висота, вид скла) середні розцінки у Києві варіюються. Нижче орієнтири, актуальні на 2025 рік - ваша заявка буде розрахована з урахуванням усіх нюансів. 
+      </p> 
+      
+      <div class="table-wrapper"> 
+      <table class="price-table" aria-label="Таблиця цін на миття вікон Київ"> 
+      <thead> 
+      <tr> 
+      <th>Тип вікна / послуга</th> 
+      <th>Ціна (грн/м² або за вікно)</th> 
+      <th>Примітки</th> 
+      </tr> 
+      </thead> 
+      <tbody> 
+      <tr> 
+      <td>Генеральне миття стандартного вікна</td> 
+      <td>від 85 грн/м²</td> 
+      <td>типове скління</td> 
+      </tr> 
+      <tr> 
+      <td>Базове миття загального фасаду (сезонне) / віконної стіни</td> 
+      <td>від 55 грн/м²</td> 
+      <td>при великому обсязі, зручний доступ</td> 
+      </tr> 
+      <tr> 
+      <td>Мийка після ремонту – стандартні вікна (двостороння)</td> 
+      <td>≈ 220 грн/м²</td> 
+      <td>сильні забруднення, видалення нальоту</td> 
+      </tr> 
+      <tr> 
+      <td>Мийка після ремонту – одностороння</td> 
+      <td>≈ 130 грн/м²</td> 
+      <td>внутрішня сторона при обмеженні доступу</td> 
+      </tr> 
+      <tr> 
+      <td>Мийка панорамних / вітражних вікон</td> 
+      <td>за домовленістю</td> 
+      <td>індивідуальний розрахунок залежить від форми та висоти</td> 
+      </tr> 
+      <tr> 
+      <td>Мінімальне замовлення (об'єкти з дрібною площею)</td> 
+      <td>роздрібні/часткові замовлення</td> 
+      </tr> 
+      </tbody> 
+      </table> 
+      </div> 
+      
+      <p style="text-align:center; margin-top:20px;"> 
+      Нижче за ринок — але з гарантією якості. Замовте розрахунок у вікні: 
+      <a href="viber://chat?number=%2B380986381008" class="btn">Написати до Viber</a> або 
+      <a href="tel:+380986381008" class="btn">Зателефонувати: 098 638 10 08</a> 
+      </p> 
+  </section>
+    
+  <section class="related-services card" style="margin-top:20px">
+      
+    <!-- Блок навигации по районам -->
+    <aside class="districts-nav" style="margin: 2rem 0; padding: 1rem; background: #f8f9fa6a; border-radius: 8px;">
+      <h3>🪟 Миття вікон у інших районах Києва</h3>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; list-style: none; padding: 0;">
+        <li><a href="window_shevchenkivskyi.html">Шевченківський район</a></li>
+        <li><a href="window-podilskiy.html">Подільський район</a></li>
+        <li><a href="window-svyatoshynskyi.html">Святошинський район</a></li>
+        <li><a href="window-pecherskiy.html">Печерський район</a></li>
+        <li><a href="window-obolon.html">Оболонський район</a></li>
+        <li><a href="window-dniprovskiy.html">Дніпровський район</a></li>
+        <li><a href="window-holosiivskiy.html">Голосіївський район</a></li>
+      </ul>
+    </aside>
+
+  </section>
+
+  <section class="related-services card" style="margin-top:20px"> 
+    <h3 style="text-align:center;color:var(--accent)">Інші послуги Multi-Cleaning</h3> 
+    <ul style="list-style:none;padding:0;text-align:center;margin:10px 0 0 0"> 
+    <li><a href="https://multicleaning.alwaysdata.net/office_cleaning.html">🧹 Прибирання офісів у Києві</a></li> 
+    <li><a href="https://multicleaning.alwaysdata.net/himchistka.html">🛋️ Хімчистка меблів на дому</a> 
+    </li> 
+    <li><a href="https://multicleaning.alwaysdata.net/generalka.html">🏠 Генеральне прибирання квартир</a></li> 
+    <li><a href="https://multicleaning.alwaysdata.net/post_construction_svyatoshynskyi.html">🔨 Прибирання після ремонту</a> 
+    </li> 
+    </ul> 
+  </section> 
+    
+    <footer> 
+      <p style="margin:0"><strong style="color:var(--accent)">Multi-Cleaning</strong> — професійне миття вікон і 
+      клінінг у Києві. &nbsp;📞 <a href="tel:+380986381008">098 638 10 08</a> · <a 
+      href="viber://chat?number=%2B380986381008">Viber 098 638 10 08</a></p> 
+    </footer>
+  </body>
+</html>

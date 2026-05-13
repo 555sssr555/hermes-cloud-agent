@@ -1,0 +1,390 @@
+/* --- Global Reset & Variables --- */
+:root {
+    --primary-color: #0066cc; /* Довіра, професіоналізм */
+    --secondary-color: #2ecc71; /* Екологічність, безпека */
+    --danger-color: #e74c3c; /* Небезпека, увага */
+    --dark-text: #2c3e50;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --radius: 12px;
+    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--dark-text);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.main-header {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box img {
+    max-height: 60px;
+    width: auto;
+}
+
+.main-nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+.main-nav a:hover { color: var(--primary-color); }
+
+.btn-call {
+    background: var(--primary-color);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn-call:hover { background: #0052a3; transform: translateY(-2px); }
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(135deg, #eef2f3 0%, #e0eafc 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+}
+
+.highlight {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 102, 204, 0.15);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* --- Comparison Section (The Core) --- */
+.comparison-section {
+    padding: 60px 0;
+}
+
+.section-title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Cards Styles */
+.chem-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.chem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* Ordinary Card (Left) */
+.chem-card.ordinary {
+    border-top-color: var(--danger-color);
+    background: #fffafa; /* Ледь помітний червонуватий відтінок */
+}
+
+.chem-card.ordinary .badge {
+    background: var(--danger-color);
+    color: white;
+}
+
+.chem-card.ordinary .feature-list li::before {
+    content: '❌';
+    margin-right: 10px;
+}
+
+/* Certified Card (Right) */
+.chem-card.certified {
+    border-top-color: var(--secondary-color);
+    background: #faffff; /* Ледь помітний зеленуватий відтінок */
+    border: 2px solid #d4edda;
+}
+
+.chem-card.certified .badge {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.chem-card.certified .feature-list li::before {
+    content: '✅';
+    margin-right: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.card-header h3 {
+    font-size: 1.4rem;
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.psychology-trigger {
+    margin-top: auto;
+    padding-top: 20px;
+    font-style: italic;
+    color: #666;
+    border-top: 1px dashed #ccc;
+    font-size: 0.95rem;
+}
+
+.psychology-trigger.success {
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-top-color: var(--secondary-color);
+}
+
+/* --- Brands Section --- */
+.brands-section {
+    background: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.brand-item {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.brand-item:hover {
+    border-color: var(--primary-color);
+    background: #f0f7ff;
+}
+
+.brand-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* --- CTA Section --- */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), #004c99);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: var(--white);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.btn-primary:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.small-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background: #1a252f;
+    color: #bdc3c7;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-col a:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #34495e;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .main-nav a { margin: 0 5px; }
+
+    .hero-section h1 { font-size: 1.8rem; }
+    
+    .comparison-grid {
+        grid-template-columns: 1fr; /* Стовпці один під одним на мобільному */
+    }
+    
+    .chem-card {
+        margin-bottom: 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn { width: 100%; text-align: center; }
+}
